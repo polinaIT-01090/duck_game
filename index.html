@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Змейка</title>
+    <meta charset="UTF-8">
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="play-menu">
+    <div class="menu-center">
+        <div>
+            <button id="btn-play">Играть</button>
+            <div id="play_pict">
+                <img id="duck" src="./img/duck.png" alt="duck">
+                <div id="vs">VS</div>
+                <img id="ball" src="./img/big_shark.png" alt="ball">
+            </div>
+        </div>
+        <div>
+            <div id="login">
+                <form name="login_game">
+                    <input type="text" name="user">
+                    <input type="password" name="password">
+                    <input type="submit">
+                </form>
+                <div id="result"></div>
+            </div>
+            <table>
+                <tbody id="table-score">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="games-screen">
+    <canvas id="game"></canvas>
+    <div class="play_bar">
+        <div id="restart">
+            <button id="defeat_btn"><img class="btn_style" src="img/выйти.png" alt="сдаться"></button>
+            <button id="paused_btn"><img class="btn_style" src="img/пауза.png" alt="пауза"></button>
+        </div>
+        <div class="count">
+            Счёт:<br>
+            <span id="count-value">0</span>
+        </div>
+        <div class="time">
+            Время игры:<br>
+            <span id="time-value">0</span>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

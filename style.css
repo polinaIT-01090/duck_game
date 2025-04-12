@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    overflow: hidden;
+}
+body {
+    background-color: royalblue;
+    background-image: url("./img/фон.png");
+    background-size: cover;
+}
+canvas {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+#btn-play {
+    width: 40%;
+    height: 100px;
+    margin: 100px auto;
+    background: dodgerblue;
+    color: white;
+    border: none;
+    font-size: 25px;
+}
+#btn-play:hover {
+    /*transition: all 2s ease-out;*/
+    /*transform: rotateZ(20deg);*/
+    animation: spin 4s infinite linear;
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    50% {transform:rotate(-30deg);}
+    75% {transform:rotate(30deg);}
+    to {transform:rotate(0deg);}
+}
+#play-menu {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.menu-center {
+    display: flex;
+    flex-direction: row;
+}
+#play_pict {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#vs {
+    font-size: 100px;
+    margin-top: 85px;
+}
+#duck {
+    transform: scale(-1, 1);
+    rotate: -20deg;
+}
+#play_pict img {
+    width: 30vh;
+    height: auto;
+}
+#games-screen {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.count, .time {
+    width: 155px;
+    text-align: center;
+    padding-top: 45px;
+    background-image: url("./img/илюминатор.png");
+    background-size: 155px 134px;
+    background-repeat: no-repeat;
+    background-color: dodgerblue;
+    border-radius: 50%;
+}
+
+#login{
+    display: none;
+}
+
+#defeat_btn, #paused_btn{
+    background: none;
+    border: none;
+    margin: 0 30px;
+}
+
+.btn_style{
+    border: 3px solid blue;
+    width: 120px;
+    height: auto;
+    border-radius: 100%;
+}
+.play_bar{
+    display: flex;
+    flex-direction: row;
+}
+table{
+    border-collapse: collapse;
+
+}
+#table-score{
+    border: 1px solid black;
+}
+td, th{
+    border: 1px solid black;
+    padding: 3px 30px;
+    background: white;
+}
+
+
+input[type="text"], input[type="password"]{
+    width: 192px;
+    height: 30px;
+}
+input[type=submit]{
+    width: 150px;
+    height: 40px;
+    background: orange;
+    color: aqua;
+    font-weight: bold;
+    font-size: 18px;
+}
+#login{
+    margin-bottom: 45px;
+}
